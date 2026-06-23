@@ -6,7 +6,7 @@ class monte_carlo():
     def __init__(self):
         return None
     
-    def estimator(self, func, **params): 
+    def estimator(self, func): 
         mc_estimator = lambda data: sum(func(data)) / len(data)
         return mc_estimator
     
